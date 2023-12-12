@@ -22,7 +22,8 @@ const updateHandler=async(id)=> {
 
 console.log(data.meaasge)
     toast.success(data.meaasge);
-setrefresh(prev=>!prev);
+    
+    setrefresh(prev=>!prev);
 
   } catch (error) {
     toast.error(error.response.data.meaasge);
